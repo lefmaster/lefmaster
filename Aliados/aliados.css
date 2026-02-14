@@ -1,0 +1,122 @@
+.page-header-aliados {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920') center/cover;
+    padding: 120px 0 60px;
+    color: white;
+}
+
+.margin-b { margin-bottom: 30px; }
+
+/* Carrusel de Logos (Simple) */
+.logo-slider {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    opacity: 0.6;
+}
+
+.partner-logo {
+    font-weight: 900;
+    color: var(--dark-color);
+    font-size: 1.2rem;
+    border: 2px dashed #ccc;
+    padding: 20px;
+}
+
+/* Tarjetas de Precios */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: 0.3s;
+    position: relative;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-card h3 { color: var(--dark-color); margin-bottom: 10px; }
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 0.9rem;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Formulario */
+.contact-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-item { margin-top: 20px; font-weight: bold; }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .contact-flex { grid-template-columns: 1fr; }
+    .pricing-card.featured { transform: scale(1); }
+}
