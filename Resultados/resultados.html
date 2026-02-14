@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados y Tablas - LEF</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="resultados.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=100&q=80" alt="Logo LEF">
+                <h1>LEF</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../equipos/equipos.html">Equipos</a></li>
+                <li><a href="resultados.html" class="active">Resultados</a></li>
+                <li><a href="../normas/normas.html">Reglamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header-results">
+        <div class="container center-text">
+            <h2>Estadísticas del Torneo</h2>
+            <p>Sigue el desempeño de tus equipos favoritos en tiempo real.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-target="scores">Últimos Resultados</button>
+                <button class="tab-btn" data-target="standings">Tabla de Posiciones</button>
+                <button class="tab-btn" data-target="calendar">Próxima Jornada</button>
+            </div>
+
+            <div id="scores" class="tab-content active">
+                <h3 class="jornada-title">Jornada 5 - Clausura 2026</h3>
+                <div class="match-card">
+                    <div class="team-score">
+                        <img src="https://via.placeholder.com/40" alt="Escudo">
+                        <span>Rayo Vallecano</span>
+                    </div>
+                    <div class="score">2 - 0</div>
+                    <div class="team-score">
+                        <span>Titanes FC</span>
+                        <img src="https://via.placeholder.com/40" alt="Escudo">
+                    </div>
+                    <div class="match-info">Finalizado | Estadio Central</div>
+                </div>
+
+                <div class="match-card">
+                    <div class="team-score">
+                        <img src="https://via.placeholder.com/40" alt="Escudo">
+                        <span>Deportivo Beta</span>
+                    </div>
+                    <div class="score">1 - 1</div>
+                    <div class="team-score">
+                        <span>Leones del Sur</span>
+                        <img src="https://via.placeholder.com/40" alt="Escudo">
+                    </div>
+                    <div class="match-info">Finalizado | Cancha Alterna</div>
+                </div>
+            </div>
+
+            <div id="standings" class="tab-content">
+                <div class="table-responsive">
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Equipo</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>GF</th>
+                                <th>GC</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><strong>Rayo Vallecano</strong></td>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>12</td>
+                                <td>3</td>
+                                <td class="pts">13</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Titanes FC</td>
+                                <td>5</td>
+                                <td>3</td>
+                                <td>0</td>
+                                <td>2</td>
+                                <td>8</td>
+                                <td>5</td>
+                                <td class="pts">9</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Deportivo Beta</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>6</td>
+                                <td>6</td>
+                                <td class="pts">8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="calendar" class="tab-content">
+                <div class="next-match">
+                    <p class="match-date">Sábado, 21 de Febrero - 10:00 AM</p>
+                    <div class="fixture">
+                        <span>Real Gamma</span>
+                        <span class="vs">VS</span>
+                        <span>Atlético Alpha</span>
+                    </div>
+                </div>
+                <div class="next-match">
+                    <p class="match-date">Sábado, 21 de Febrero - 12:00 PM</p>
+                    <div class="fixture">
+                        <span>Inter Costa</span>
+                        <span class="vs">VS</span>
+                        <span>Leones del Sur</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Liga de Fútbol LEF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="resultados.js"></script>
+</body>
+</html>
