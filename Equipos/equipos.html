@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos y Jugadores - LEF</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="equipos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=100&q=80" alt="Logo LEF">
+                <h1>LEF</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../objetivos/objetivos.html">Objetivos</a></li>
+                <li><a href="equipos.html" class="active">Equipos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header-equipos">
+        <div class="container center-text">
+            <h2>Nuestros Clubes</h2>
+            <p>Conoce a los protagonistas de la liga, sus plantillas y su estado actual.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="activo">Activos</button>
+                <button class="filter-btn" data-filter="inactivo">Inactivos</button>
+                <button class="filter-btn" data-filter="juvenil">Juvenil</button>
+            </div>
+
+            <div class="equipos-grid" id="equipos-grid">
+                <div class="team-card activo juvenil">
+                    <div class="status-badge">Activo</div>
+                    <img src="https://images.unsplash.com/photo-1518605368461-1e125222058d?w=400" alt="Logo Equipo" class="team-logo">
+                    <h3>Rayo Vallecano Jrs</h3>
+                    <p class="category">Categoría: Juvenil</p>
+                    <div class="player-list">
+                        <h4>Jugadores Clave:</h4>
+                        <ul>
+                            <li>⚽ Juan "La Bala" Rivas (Delantero)</li>
+                            <li>🧤 Marcos Sosa (Portero)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-card inactivo">
+                    <div class="status-badge inactive">Inactivo</div>
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbb1925536?w=400" alt="Logo Equipo" class="team-logo">
+                    <h3>Inter de la Costa</h3>
+                    <p class="category">Categoría: Libre</p>
+                    <div class="player-list">
+                        <h4>Jugadores Clave:</h4>
+                        <ul>
+                            <li>⚽ Pedro Duarte (Mediocampista)</li>
+                            <li>🛡️ Luis Méndez (Defensa)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-card activo">
+                    <div class="status-badge">Activo</div>
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=400" alt="Logo Equipo" class="team-logo">
+                    <h3>Titanes del Norte</h3>
+                    <p class="category">Categoría: Veteranos</p>
+                    <div class="player-list">
+                        <h4>Jugadores Clave:</h4>
+                        <ul>
+                            <li>⚽ "El capi" Roberto (Delantero)</li>
+                            <li>🛡️ Jorge Gil (Defensa)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Liga de Fútbol LEF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="equipos.js"></script>
+</body>
+</html>
