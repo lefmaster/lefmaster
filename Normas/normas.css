@@ -1,0 +1,102 @@
+.page-header-normas {
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1920') center/cover;
+    padding: 100px 0 50px;
+    color: white;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+/* Estilos Acordeón */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 15px 20px;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--dark-color);
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #f8f9fa;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    background: #fff;
+    color: #666;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 15px 20px;
+    max-height: 200px;
+    border-top: 1px solid #eee;
+}
+
+.accordion-item.active .accordion-header {
+    color: var(--primary-color);
+}
+
+/* Sidebar y Junta */
+.junta-box {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 5px solid var(--primary-color);
+}
+
+.directivo {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.directivo strong {
+    display: block;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.download-card {
+    margin-top: 30px;
+    background: var(--dark-color);
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
